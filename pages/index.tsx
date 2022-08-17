@@ -8,6 +8,8 @@ import Link from 'next/link'
 
 export default function Home() {
 
+
+
   // b290f5
   // A984F5
   //https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619b0e63179ab20e6c9d3bfd_blog-post.svg

@@ -3,6 +3,7 @@ import styles from "../components/Exec.module.css";
 
 export default function exec() {
 
+
     const grid_picture = (
         <div className = {styles.grid_picture}>
             <p>  </p>
