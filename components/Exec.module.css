@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-#down {
+.down {
     margin-top: 11%;
     padding-bottom: 2%;
     font-size: 30px;
@@ -64,9 +64,10 @@
 
 .executive_grid_container {
     display: grid;
-    margin-left: 7%;
+    margin-left: 13%;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0px;
+    
     
 }
 
