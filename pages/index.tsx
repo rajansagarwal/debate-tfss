@@ -7,6 +7,7 @@ import Link from 'next/link'
 import announcementBoard from "./announcement";
 
 
+
 export default function Home() {
 
 
@@ -41,7 +42,7 @@ export default function Home() {
           <h3 style={{fontSize: "60px", fontWeight: "500", margin: 'none', padding: 'none' }}>Debate Competition and Active Education</h3>
           <p style={{fontSize: "25px", fontWeight: "300", marginTop: '-40px', padding: 'none' }} >Elevating the world's conciousness since 2020.</p>
           <div style={{ display: 'flex', gap: '30px', marginTop: '60px'}}>
-            <button style={{ backgroundColor: 'black', border: '1px solid black', padding: '20px', width: '200px', color: 'white', fontWeight: '700', fontSize: '16px' }}>Crash Course</button>
+            <Link href="/crashcourse"><button style={{ backgroundColor: 'black', border: '1px solid black', padding: '20px', width: '200px', color: 'white', fontWeight: '700', fontSize: '16px' }}>Crash Course</button></Link>
             <button style={{ backgroundColor: 'transparent', border: '1px solid black', padding: '20px', width: '200px', color: 'black', fontWeight: '700', fontSize: '16px' }}>Apply Now</button>
           </div>
           </div>
@@ -75,6 +76,7 @@ export default function Home() {
           <p style={{fontSize: "30px", fontWeight: "300", padding: 'none' }} id="fancy" >Providing debate education to Turner Fenton's finest since 2020.</p>
           <Link href="/exec"><button style={{ backgroundColor: 'transparent', border: '1px solid black', padding: '20px', width: '200px', color: 'black', fontWeight: '700', fontSize: '16px' }}>Executives</button></Link>
           <Link href="/announcement"><button style={{ backgroundColor: 'transparent', border: '1px solid black', padding: '20px', width: '200px', color: 'black', fontWeight: '700', fontSize: '16px' }}>Announcement</button></Link>
+          
       </div>
       </div>
     </main>

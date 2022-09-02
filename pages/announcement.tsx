@@ -1,4 +1,4 @@
-import MiddlewarePlugin from 'next/dist/build/webpack/plugins/middleware-plugin';
+
 import styles from '../components/Announcement.module.css'
 
 export default function announcementBoard() {
