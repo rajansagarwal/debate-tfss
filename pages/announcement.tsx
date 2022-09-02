@@ -1,5 +1,6 @@
 
 import styles from '../components/Announcement.module.css'
+import Link from 'next/link'
 
 export default function announcementBoard() {
 
@@ -36,6 +37,13 @@ export default function announcementBoard() {
         <br />
         
         {AnnouncementList}
-        </div>
+        <div style={{textAlign: "center"}}>
+                <Link href="/"><button style={{backgroundColor: 'black', border: '1px solid black', padding: '20px', width: '200px', color: 'white', fontWeight: '700', fontSize: '16px'}}>Return Home</button></Link>
+                <div>
+                    <p style={{marginTop: "50px", color:"gray", fontSize: "12px", padding:"10px"}}>2022/2023 TFSS Debate Society </p>
+                </div>
+            </div>
+    </div>
+        
     )
 }

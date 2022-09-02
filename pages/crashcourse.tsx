@@ -1,6 +1,6 @@
 
 import styles from "../components/CrashCourse.module.css"
-
+import Link from 'next/link'
 
 export default function crashCourse() {
 
@@ -45,6 +45,13 @@ export default function crashCourse() {
                 <div className={styles.sampleDebateTopics}>
                     <h1> Sample Debate Topics</h1>
                     {sampleTopics}
+                </div>
+            </div>
+
+            <div style={{textAlign: "center"}}>
+                <Link href="/"><button style={{backgroundColor: 'black', border: '1px solid black', padding: '20px', width: '200px', color: 'white', fontWeight: '700', fontSize: '16px'}}>Return Home</button></Link>
+                <div>
+                    <p style={{marginTop: "50px", color:"gray", fontSize: "12px", padding:"10px"}}>2022/2023 TFSS Debate Society </p>
                 </div>
             </div>
             
