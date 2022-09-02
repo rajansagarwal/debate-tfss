@@ -16,6 +16,7 @@ export default function Home() {
   //https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619b0e63179ab20e6c9d3bfd_blog-post.svg
   return (
     <main className={styles.main}>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       <div
         style={{
           height: "70vh",

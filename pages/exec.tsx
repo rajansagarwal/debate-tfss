@@ -20,7 +20,7 @@ export default function exec() {
 
     return (
         <div className={styles.HomeExec}>
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <div className={styles.ExecutiveTitle}>
             <div className={styles.ExecutiveTitleFont}>
                 <h1> Executive Team </h1>

@@ -23,6 +23,7 @@ export default function announcementBoard() {
 
     return (
         <div>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <div className={styles.TitleBox}>
             <div className={styles.TitleFont}>
                 <h1>Announcements</h1>
