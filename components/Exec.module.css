@@ -73,7 +73,7 @@
 
 .grid_president1 {
     width: 500px;
-    height: 300px;
+    height: 350px;
     padding: 10px;
     border: 2px solid black;
     margin: 0;
@@ -86,7 +86,7 @@
 
 .grid_president2{
     width: 500px;
-    height: 300px;
+    height: 350px;
     padding: 10px;
     border: 2px solid black;
     margin: 0;
@@ -98,7 +98,7 @@
 
 .grid_president3{
     width: 500px;
-    height: 300px;
+    height: 350px;
     padding: 10px;
     margin-left: 50%;
     border: 2px solid black;
@@ -123,8 +123,8 @@
 }
 
 .grid_picture {
-    width: 160px;
-    height: 200px;
+    width: 170px;
+    height: 220px;
     padding: 10px;
     border: 2px solid black;
     margin-left: 40px;
