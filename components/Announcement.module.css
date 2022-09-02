@@ -1,0 +1,42 @@
+
+.TitleBox {
+    width: auto;
+    height: 600px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 0;
+    background-color: #d0bef7;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.TitleFont {
+    margin-top: 100px;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    font-size: 43px;
+
+}
+
+.SubTitleFont {
+    color: black;
+    font-size: 30px;
+
+}
+
+.announcementBox {
+    width: 1400px;
+    margin-right: 10px;
+    height: 300px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 0;
+    background-color: #b290f5;
+    text-align: left;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    box-shadow: 10px 10px 0px 10px black;
+}
