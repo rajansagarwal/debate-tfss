@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import exec from "./exec"
 import Link from 'next/link' 
+import announcementBoard from "./announcement";
 
 
 export default function Home() {
@@ -72,6 +73,7 @@ export default function Home() {
           <h3 style={{fontSize: "40px", fontWeight: "500", margin: 'none', padding: 'none' }}>Knowledge At Your Fingertips.</h3>
           <p style={{fontSize: "30px", fontWeight: "300", padding: 'none' }} id="fancy" >Providing debate education to Turner Fenton's finest since 2020.</p>
           <Link href="/exec"><button style={{ backgroundColor: 'transparent', border: '1px solid black', padding: '20px', width: '200px', color: 'black', fontWeight: '700', fontSize: '16px' }}>Executives</button></Link>
+          <Link href="/announcement"><button style={{ backgroundColor: 'transparent', border: '1px solid black', padding: '20px', width: '200px', color: 'black', fontWeight: '700', fontSize: '16px' }}>Announcement</button></Link>
       </div>
       </div>
     </main>
