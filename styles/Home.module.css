@@ -1,0 +1,33 @@
+.grid_container {
+    display: grid;
+    margin-left: 0%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
+    margin-top: 5%;
+    margin-left: 60px;
+    position: relative;
+}
+
+.grid_photo {
+    width: 600px;
+    height: 700px;
+    padding: 10px;
+    border: 2px solid black;
+    margin-left: 20px;
+    margin-right: 5%;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: left;;
+}
+
+.grid_text {
+    position: relative;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 80px;
+    margin-right: 40px;
+    padding: 20px;
+    font-family: 'Aboreto', cursive;
+}

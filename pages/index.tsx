@@ -71,16 +71,40 @@ export default function Home() {
           backgroundColor: "#d0bef7",
           display: 'flex',
           flexDirection: 'row',
-          textAlign: 'center',
+          textAlign: 'left',
           border: '3px solid black'
         }}
         className="full"
       >
         <div>
-          <h3 style={{fontSize: "40px", fontWeight: "500", margin: 'none', padding: 'none' }}>Knowledge At Your Fingertips.</h3>
-          <p style={{fontSize: "30px", fontWeight: "300", padding: 'none' }} id="fancy" >Providing debate education to Turner Fenton's finest since 2020.</p>
-     
+          <h3 style={{fontSize: "40px", fontWeight: "500", margin: 'none', padding: 'none', textAlign: "center" }}>Knowledge At Your Fingertips.</h3>
+          <p style={{fontSize: "30px", fontWeight: "300", padding: 'none', textAlign: "center", marginBottom: "100px" }} id="fancy" >Providing debate education to Turner Fenton's finest since 2020.</p>
+          <div>
+            <u><h1 style={{fontSize: "50px", fontWeight: "500", margin: 'none', padding: 'none', textAlign: "center"}}>What we Do</h1></u>
+            <div className={styles.grid_container}>
+              <div className={styles.grid_photo}>
+                <h1> Picture </h1>
+              </div>
+              <div className={styles.grid_text}>
+                <h3>Text</h3>
+              </div>
+
+            </div>
+            <u><h1 style={{fontSize: "50px", fontWeight: "500", margin: 'none', padding: 'none', textAlign: "center", marginTop: "100px"}}> Our Goal</h1></u>
+            <div className={styles.grid_container}>
+              <div className={styles.grid_photo}>
+                <h1> Picture </h1>
+              </div>
+              <div className={styles.grid_text}>
+                <h3>Text for Goal</h3>
+              </div>
+
+            </div>
+          </div>
           
+          <div style={{textAlign: "center"}}>
+            <p style={{marginTop: "50px", color:"gray", fontSize: "12px", padding:"10px"}}>2022/2023 TFSS Debate Society </p>
+          </div>    
       </div>
       </div>
     </main>
