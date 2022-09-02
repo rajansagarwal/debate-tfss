@@ -30,7 +30,7 @@
 .announcementBox {
     width: 1400px;
     margin-right: 10px;
-    height: 300px;
+    height: auto;
     padding: 10px;
     border: 2px solid black;
     margin: 0;

@@ -1,0 +1,85 @@
+
+
+.grid_container {
+    display: grid;
+    margin-left: 0%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px;
+    margin-top: 5%;
+    margin-left: 60px;
+    position: relative;
+}
+
+.lessonSlides {
+    
+    width: 90%;
+    height: 900px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 0;
+    background-color: #ccb6fa;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 0px 10px black;
+    position: relative;
+
+}
+
+.sampleDebateTopics{
+    width: 90%;
+    height: 900px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 0;
+    background-color: #b290f5;
+    text-align: center;
+    margin-bottom: 80px;
+    box-shadow: 10px 10px 0px 10px black;
+    position: relative;
+}
+
+.slideBox {
+    width: 750px;
+    height: auto;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 0;
+    background-color: #b290f5;
+    text-align: left;
+    margin-bottom: 40px;
+    box-shadow: 10px 10px 0px 10px black;
+}
+
+.topicBox {
+    width: 750px;
+    height: auto;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 0;
+    background-color: #ccb6fa;
+    text-align: left;
+    margin-bottom: 40px;
+    box-shadow: 10px 10px 0px 10px black;
+    
+}
+
+.topicBox h1{
+    font-size: 25px;
+
+}
+.topicBox h2{
+    font-size: 20px;
+
+}
+
+.slideBox h1{
+    font-size: 25px;
+
+}
+.slideBox h2{
+    font-size: 20px;
+
+}
+
+
+
