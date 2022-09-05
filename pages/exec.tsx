@@ -314,7 +314,7 @@ export default function exec() {
                         <div className={styles.grid_text}>
                             
                             <div className={styles.text}>
-                                <p>Jaival is in charge of the "tech-based stuff" of Debate. He hopes that his passion for technology allows 
+                                <p>Jaival is in charge of the &quot;tech-based stuff&quot; of Debate. He hopes that his passion for technology allows 
                                     members to make the most out of the Debate Club. From getting recent information at their fingertips to lessons,
                                     Jaival will ensure that the tools are available for the members to explore the art of debate.
                                  </p>

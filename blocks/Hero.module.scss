@@ -8,7 +8,6 @@
                  hsla(random() * 180 - 70, 100%, 80%, 1);
   }
   text-shadow: $text-shadow;
-  z-index: 99;
 }
 
 
@@ -20,7 +19,7 @@
   display: block;
   font-size: 52px;
   color: transparent;
-  z-index: 0;
+  z-index: 999;
 }
 
 
@@ -31,18 +30,19 @@
   width: 3em;
   height: 3em;
   content: '.';
+  z-index: 0;
   mix-blend-mode: screen;
   animation: 44s -27s move infinite ease-in-out alternate;
 }
 
 .container::before {
-  @include dots(120);
+  @include dots(20);
   animation-duration: 44s;
   animation-delay: -27s;
 }
 
 .container::after {
-  @include dots(120);
+  @include dots(20);
   animation-duration: 43s;
   animation-delay: -32s;
 }
@@ -70,6 +70,7 @@
   letter-spacing: var(--title-letter-spacing);
   text-align: center;
   margin-bottom: 21px;
+  z-index: 999;
   color: rgb(209, 209, 209);
 }
 
