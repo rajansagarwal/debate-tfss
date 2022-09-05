@@ -1,0 +1,28 @@
+.container {
+  height: var(--page-header-height);
+  margin-bottom: calc(-1 * var(--page-header-height));
+  padding: 16px var(--page-padding);
+  backdrop-filter: blur(8px);
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  color: #ebbcff;
+}
+
+.navRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 32px;
+}

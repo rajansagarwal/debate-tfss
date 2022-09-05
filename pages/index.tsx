@@ -1,112 +1,93 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import exec from "./exec"
-import Link from 'next/link' 
-import announcementBoard from "./announcement";
-
-
+import Head from 'next/head'
+import Benefits from '../blocks/Benefits';
+import Break from '../blocks/Break';
+import Epilogue from '../blocks/Epilogue';
+import Features from '../blocks/Features';
+import Footer from '../blocks/Footer';
+import Header from '../blocks/Header';
+import Hero from '../blocks/Hero';
+import Highlights from '../blocks/Highlights';
 
 export default function Home() {
-
-
-
-  // b290f5
-  // A984F5
-  //https://assets-global.website-files.com/6171b265e5c8aa59b42c3472/619b0e63179ab20e6c9d3bfd_blog-post.svg
   return (
-    <main className={styles.main}>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-      <div
-        style={{
-          height: "70vh",
-          display: "flex",
-          width: "100vw",
-          fontWeight: "300",
-        }}
-      >
-        <div
-          style={{
-            backgroundColor: "#ccb6fa",
-            padding: "5vw",
-            paddingRight: '10vw',
-            border: "3px solid black",
+    <div>
+      <Head>
+        <title>TFSS Debate</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Header id="top" title=""/>
 
-            margin: 'none'
-          }}
-          className="half"
-          id="half-1"
-        >
-          <div>
-          <h3 style={{fontSize: "60px", fontWeight: "500", margin: 'none', padding: 'none' }}>Debate Competition and Active Education</h3>
-          <p style={{fontSize: "25px", fontWeight: "300", marginTop: '-40px', padding: 'none' }} >Elevating the world's conciousness since 2020.</p>
-          <div style={{ display: 'flex', gap: '30px', marginTop: '60px', marginBottom: '30px'}}>
-            <Link href="/crashcourse"><button style={{ backgroundColor: 'black', border: '1px solid black', padding: '20px', width: '200px', color: 'white', fontWeight: '700', fontSize: '16px' }}>Crash Course</button></Link>
-            <button style={{ backgroundColor: 'transparent', border: '1px solid black', padding: '20px', width: '200px', color: 'black', fontWeight: '700', fontSize: '16px' }}>Apply Now</button>
-            
-          </div>
-          <div style={{display: 'flex', gap: '30px', marginTop: '60px', marginBottom: '30px'}}>
-          <Link href="/exec"><button style={{ backgroundColor: 'black', border: '1px solid black', padding: '20px', width: '200px', color: 'white', fontWeight: '700', fontSize: '16px' }}>Executives</button></Link>
-          <Link href="/announcement"><button style={{ backgroundColor: 'transparent', border: '1px solid black', padding: '20px', width: '200px', color: 'black', fontWeight: '700', fontSize: '16px' }}>Announcements</button></Link>
-          </div>
-          </div>
-        </div>
-        <div
-          style={{ backgroundColor: "#b290f5", border: "3px solid black" }}
-          className="half"
-          id="half-2"
-        >
-          <img
-            style={{ border: "4px solid black" }}
-            src="https://file.rajanagarwal.xyz/debateteam.png"
-            height="500px"
-          />
-        </div>
-      </div>
-      <div
-        style={{
-          minHeight: "30vh",
-          width: "100vw",
-          backgroundColor: "#d0bef7",
-          display: 'flex',
-          flexDirection: 'row',
-          textAlign: 'left',
-          border: '3px solid black'
-        }}
-        className="full"
-      >
-        <div>
-          <h3 style={{fontSize: "40px", fontWeight: "500", margin: 'none', padding: 'none', textAlign: "center" }}>Knowledge At Your Fingertips.</h3>
-          <p style={{fontSize: "30px", fontWeight: "300", padding: 'none', textAlign: "center", marginBottom: "100px" }} id="fancy" >Providing debate education to Turner Fenton's finest since 2020.</p>
-          <div>
-            <u><h1 style={{fontSize: "50px", fontWeight: "500", margin: 'none', padding: 'none', textAlign: "center"}}>What we Do</h1></u>
-            <div className={styles.grid_container}>
-              <div className={styles.grid_photo}>
-                <h1> Picture </h1>
-              </div>
-              <div className={styles.grid_text}>
-                <h3>Text</h3>
-              </div>
+      <main>
+        <Hero
+          title="Debate Competition and Active Education"
+          subtitle="Educating Turner Fenton's finest since 2019."
+          illustration=""
+          subscribePlaceholder="you@email.com"
+          subscribeAction="When is it ready?"
+        />
 
-            </div>
-            <u><h1 style={{fontSize: "50px", fontWeight: "500", margin: 'none', padding: 'none', textAlign: "center", marginTop: "100px"}}> Our Goal</h1></u>
-            <div className={styles.grid_container}>
-              <div className={styles.grid_photo}>
-                <h1> Picture </h1>
-              </div>
-              <div className={styles.grid_text}>
-                <h3>Text for Goal</h3>
-              </div>
+        <Highlights
+          title="Knowledge At Your Fingertips"
+          subtitle="All your debate content for lessons and self-study, native to TFSS Debate."
+        />
 
-            </div>
-          </div>
-          
-          <div style={{textAlign: "center"}}>
-            <p style={{marginTop: "50px", color:"gray", fontSize: "12px", padding:"10px"}}>2022/2023 TFSS Debate Society </p>
-          </div>    
-      </div>
-      </div>
-    </main>
-  );
-};
+        <Benefits
+          background="alternate"
+          title="Our Stellar Team"
+          subtitle="Each one of our team members are dedicated to creating accessible and synthesized debate content for Turner Fenton students."
+          benefits={[
+            {illustration:'https://file.rajanagarwal.xyz/debateteam.png', title:'Jeevan Brar', text:'President'},
+            {illustration:'https://file.rajanagarwal.xyz/debateteam.png', title:'Japnam Dhaliwal', text:'Vice President'},
+            {illustration:'https://file.rajanagarwal.xyz/debateteam.png', title:'Sara Bale', text:'Director of Education'},
+            {illustration:'https://file.rajanagarwal.xyz/debateteam.png', title:'Aditya Makkar', text:'Director of Education'},
+            {illustration:'https://file.rajanagarwal.xyz/debateteam.png', title:'Ashlene Metley', text:'Head of Communication'},
+            {illustration:'https://file.rajanagarwal.xyz/debateteam.png', title:'Shweta Menon', text:'Head of Communication'},
+            {illustration:'https://file.rajanagarwal.xyz/debateteam.png', title:'Pious Hunjan', text:'Head of Promotions'},
+            {illustration:'https://file.rajanagarwal.xyz/debateteam.png', title:'Dilnazz Matharu', text:'Head of Promotions'},
+            {illustration:'https://file.rajanagarwal.xyz/debateteam.png', title:'Tanisha Gottemukula', text:'Head of Promotions'},
+            {illustration:'https://file.rajanagarwal.xyz/debateteam.png', title:'Anhad Kaur', text:'Head of Promotions'},
+            {illustration:'https://file.rajanagarwal.xyz/debateteam.png', title:'Mansi Arora', text:'Head of Promotions'},
+            {illustration:'https://file.rajanagarwal.xyz/debateteam.png', title:'Saachi Kohli', text:'Head of Promotions'},
+            {illustration:'https://file.rajanagarwal.xyz/debateteam.png', title:'Elena Campos Perez', text:'Education Team'},
+            {illustration:'https://file.rajanagarwal.xyz/debateteam.png', title:'Ester Campos Perez', text:'Education Team'},
+            {illustration:'https://file.rajanagarwal.xyz/debateteam.png', title:'Maanya Dahiya', text:'Education Team'},
+            {illustration:'https://file.rajanagarwal.xyz/debateteam.png', title:'Amreen Sandhu', text:'Education Team'},
+            {illustration:'https://file.rajanagarwal.xyz/debateteam.png', title:'Rajan Agarwal', text:'Education Team'},
+            {illustration:'https://file.rajanagarwal.xyz/debateteam.png', title:'Jaival Patel', text:'Education Team'},
+          ]}
+        />
+
+        {/*<Break
+          title="Risk Reduction: Try Product free for 14 days"
+          subtitle="This is an in-betwen CTA for visitors that already got convinced."
+          illustration=""
+          action="When is it ready?"
+          onActionClick={() => window.scrollTo({top:99999, behavior:'smooth'})}
+        />
+
+        <Features
+          background="alternate"
+          title="But wait, there is more"
+          subtitle="Describe the full extent of your product"
+          features={[
+            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
+            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
+            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
+            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
+            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
+            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
+          ]}
+        />
+
+        <Epilogue
+          title="Ask if your visitor wants to solve problem X today"
+          subtitle="Explain how your solution will solve this problem and ask them to start a free trial, or any other low-key CTA they could take"
+          illustration=""
+          subscribePlaceholder="you@email.com"
+          subscribeAction="When is it ready?"
+        />*/}
+      </main>
+
+    </div>
+  )
+}
